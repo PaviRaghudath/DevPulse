@@ -1,0 +1,39 @@
+# FileAnalyzer dependencies
+# Install with: pip install -r requirements.txt
+
+# AI providers (install at least one)
+anthropic==0.30.0      # Claude (Anthropic)
+openai==1.57.0         # ChatGPT (OpenAI)
+
+# Web UI
+streamlit==1.40.2
+
+# Document parsing
+pypdf==6.11.0
+python-docx==1.1.2
+pandas==2.3.0
+
+# Local embeddings (downloads ~80MB model on first use)
+sentence-transformers==3.3.1
+
+# Local vector store (persistent, no external service needed)
+chromadb==0.5.23
+
+# Environment variable loading
+python-dotenv==1.0.1
+
+# Memory monitoring
+psutil==6.1.0
+
+# CLI (optional — app.py is the primary interface)
+click==8.1.7
+rich==13.9.4
+
+# Monitoring agent — SSH/SFTP log fetching
+paramiko==3.5.0
+
+# Monitoring agent — background scheduled checks
+apscheduler==3.10.4
+
+# Testing
+pytest==8.3.4

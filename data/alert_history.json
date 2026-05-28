@@ -1,0 +1,131 @@
+[
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice-error.log",
+    "error_count": 273,
+    "warn_count": 0,
+    "top_errors": [
+      "ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "273 error(s) detected in backoffice-error.log. Warnings: 0. Top error: ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "c3ce8622",
+    "timestamp": "2026-05-28T16:35:42.450361",
+    "email_sent": false,
+    "lines_analyzed": 273
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice.log",
+    "error_count": 273,
+    "warn_count": 318,
+    "top_errors": [
+      "ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "273 error(s) detected in backoffice.log. Warnings: 318. Top error: ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "d78cb22f",
+    "timestamp": "2026-05-28T16:35:42.405175",
+    "email_sent": false,
+    "lines_analyzed": 1130
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice-error.log",
+    "error_count": 242,
+    "warn_count": 0,
+    "top_errors": [
+      "ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "242 error(s) detected in backoffice-error.log. Warnings: 0. Top error: ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "5208b2d5",
+    "timestamp": "2026-05-28T16:20:42.464886",
+    "email_sent": false,
+    "lines_analyzed": 242
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice.log",
+    "error_count": 242,
+    "warn_count": 287,
+    "top_errors": [
+      "ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "242 error(s) detected in backoffice.log. Warnings: 287. Top error: ERROR [pool-2-thread-7] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "265a39ce",
+    "timestamp": "2026-05-28T16:20:42.440262",
+    "email_sent": false,
+    "lines_analyzed": 1167
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice-error.log",
+    "error_count": 137,
+    "warn_count": 0,
+    "top_errors": [
+      "ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "137 error(s) detected in backoffice-error.log. Warnings: 0. Top error: ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "66c379a5",
+    "timestamp": "2026-05-27T21:55:37.149907",
+    "email_sent": false,
+    "lines_analyzed": 137
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice.log",
+    "error_count": 139,
+    "warn_count": 184,
+    "top_errors": [
+      "ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "139 error(s) detected in backoffice.log. Warnings: 184. Top error: ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "9238b5fa",
+    "timestamp": "2026-05-27T21:55:37.119250",
+    "email_sent": false,
+    "lines_analyzed": 728
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice-error.log",
+    "error_count": 432,
+    "warn_count": 0,
+    "top_errors": [
+      "ERROR [pool-2-thread-5] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+      "ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "432 error(s) detected in backoffice-error.log. Warnings: 0. Top error: ERROR [pool-2-thread-5] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "4f3fb4b2",
+    "timestamp": "2026-05-27T21:39:18.745123",
+    "email_sent": false,
+    "lines_analyzed": 432
+  },
+  {
+    "project_id": "58e1affe",
+    "project_name": "Backoffice",
+    "log_file": "/opt/logs/backoffice/backoffice.log",
+    "error_count": 361,
+    "warn_count": 1732,
+    "top_errors": [
+      "ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set"
+    ],
+    "has_stack_traces": false,
+    "summary": "361 error(s) detected in backoffice.log. Warnings: 1732. Top error: ERROR [pool-2-thread-6] c.m.b.c.LogStreamController - Log stream error [env=dev]: SSH authentication not configured. Set",
+    "id": "551f61e4",
+    "timestamp": "2026-05-27T21:39:18.663570",
+    "email_sent": false,
+    "lines_analyzed": 11033
+  }
+]

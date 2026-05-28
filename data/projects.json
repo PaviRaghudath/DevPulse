@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "name": "Backoffice",
+      "host": "54.193.192.146",
+      "username": "ubuntu",
+      "log_paths": [
+        "/opt/logs/backoffice/backoffice.log",
+        "/opt/logs/backoffice/backoffice-error.log"
+      ],
+      "id": "58e1affe",
+      "port": 22,
+      "auth_method": "key",
+      "ssh_key_path": "E:\\Pavithra\\Deployment\\Backoffice\\mkonnekt_iq_sandbox.pem",
+      "ssh_password": "",
+      "app_type": "spring_boot",
+      "deploy_path": "opt/backoffice",
+      "artifact_dest": "",
+      "restart_cmd": "sudo systemctl restart backoffice",
+      "check_interval_min": 15,
+      "error_threshold": 0,
+      "notify_emails": [
+        "pavithra.mkonnekt@gmail.com"
+      ],
+      "enabled": true,
+      "created_at": "2026-05-27T21:19:29.339795",
+      "git_url": "",
+      "git_branch": "main",
+      "git_token": "",
+      "git_username": "",
+      "project_type": "",
+      "build_tool": "",
+      "build_command": "",
+      "artifact_path": "",
+      "cicd_type": "none",
+      "cicd_workflow": "",
+      "cicd_url": "",
+      "cicd_token": ""
+    }
+  ]
+}

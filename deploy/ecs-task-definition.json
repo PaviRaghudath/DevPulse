@@ -1,0 +1,62 @@
+{
+  "family": "fileanalyzer",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "3072",
+  "executionRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::<ACCOUNT_ID>:role/ecsTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "fileanalyzer",
+      "image": "<ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/fileanalyzer:latest",
+      "portMappings": [
+        {
+          "containerPort": 8501,
+          "protocol": "tcp"
+        }
+      ],
+      "secrets": [
+        {
+          "name": "OPENAI_API_KEY",
+          "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:fileanalyzer/openai-key"
+        },
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "valueFrom": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:fileanalyzer/anthropic-key"
+        }
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "vector-store",
+          "containerPath": "/app/data/vector_store",
+          "readOnly": false
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/fileanalyzer",
+          "awslogs-region": "<REGION>",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "healthCheck": {
+        "command": ["CMD-SHELL", "curl -f http://localhost:8501/_stcore/health || exit 1"],
+        "interval": 30,
+        "timeout": 10,
+        "retries": 3,
+        "startPeriod": 60
+      }
+    }
+  ],
+  "volumes": [
+    {
+      "name": "vector-store",
+      "efsVolumeConfiguration": {
+        "fileSystemId": "<EFS_FILE_SYSTEM_ID>",
+        "rootDirectory": "/fileanalyzer"
+      }
+    }
+  ]
+}
