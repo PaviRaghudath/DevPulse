@@ -134,6 +134,14 @@ _init_state()
 #  SIDEBAR — navigation + context-sensitive AI provider panel
 # ════════════════════════════════════════════════════════════════════════════
 
+def _secret(key: str) -> str:
+    """Safely read from st.secrets — returns '' if not configured."""
+    try:
+        return st.secrets.get(key, "")
+    except Exception:
+        return ""
+
+
 def render_sidebar():
     """Render sidebar navigation and return (provider, api_key, model)."""
     from src.config import OPENAI_MODELS, ANTHROPIC_MODELS
@@ -172,14 +180,14 @@ def render_sidebar():
             if provider == "openai":
                 api_key = st.text_input(
                     "OpenAI API Key",
-                    value=os.environ.get("OPENAI_API_KEY") or st.secrets.get("OPENAI_API_KEY", ""),
+                    value=os.environ.get("OPENAI_API_KEY") or _secret("OPENAI_API_KEY"),
                     type="password", placeholder="sk-...",
                 )
                 model = st.selectbox("Model", OPENAI_MODELS)
             else:
                 api_key = st.text_input(
                     "Anthropic API Key",
-                    value=os.environ.get("ANTHROPIC_API_KEY") or st.secrets.get("ANTHROPIC_API_KEY", ""),
+                    value=os.environ.get("ANTHROPIC_API_KEY") or _secret("ANTHROPIC_API_KEY"),
                     type="password", placeholder="sk-ant-...",
                 )
                 model = st.selectbox("Model", ANTHROPIC_MODELS)
