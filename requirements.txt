@@ -17,9 +17,7 @@ pandas==2.3.0
 sentence-transformers==3.3.1
 
 # Local vector store (persistent, no external service needed)
-# chromadb — optional, install locally for persistent vector store
-# On Streamlit Cloud the app uses an in-memory fallback automatically
-# chromadb>=0.6.0
+chromadb>=0.6.0
 
 # Environment variable loading
 python-dotenv==1.0.1
